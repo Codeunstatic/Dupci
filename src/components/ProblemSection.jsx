@@ -177,11 +177,11 @@ function InboxCard({ className, style }) {
         <span className="font-medium text-[#8a8177] text-[12px] tracking-[-0.135px]">&middot; one platform</span>
       </div>
       <div className="bg-white border border-[rgba(27,23,19,0.09)] rounded-[12px] shadow-[0px_1px_1.5px_rgba(27,23,19,0.05)] p-[15px] flex flex-col flex-1">
-        <div className="flex items-center justify-between pb-1">
+        <div className="flex items-center justify-between pb-3 border-b border-[rgba(27,23,19,0.09)]">
           <span className="font-semibold text-[#1b1713] text-[14.5px]">Inbox</span>
           <span className="font-medium text-[#8a8177] text-[9px] tracking-[1.26px] uppercase">All channels</span>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-1 justify-evenly pl-[10px]">
           {CHANNELS.map((channel) => (
             <MiniRow key={channel.key} channel={channel} />
           ))}
